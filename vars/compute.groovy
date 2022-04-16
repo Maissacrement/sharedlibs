@@ -1,4 +1,4 @@
-import org.jenkinsci.plugins.docker.workflow.Docker
+import static org.jenkinsci.plugins.docker.workflow.*
 
 def addition(x, y) {
     echo "${x} and ${y} do ${x+y}"
