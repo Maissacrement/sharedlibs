@@ -1,5 +1,7 @@
+import org.jenkinsci.plugins.docker.workflow.Docker
+
 def addition(x, y) {
     echo "${x} and ${y} do ${x+y}"
-    def docker = org.jenkinsci.plugins.docker.workflow.Docker docker
+    def docker = Docker docker
     docker.image('mysql:5')
 }
