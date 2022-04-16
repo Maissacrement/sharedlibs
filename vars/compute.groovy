@@ -1,6 +1,7 @@
-import org.jenkinsci.plugins.docker.workflow.*
+import org.jenkinsci.plugins.docker.workflow.DockerDSL
 
 def addition(x, y) {
     echo "${x} and ${y} do ${x+y}"
-    Docker
+    Object docker = new DockerDSL().getValue(script)
+    println docker
 }
